@@ -7,14 +7,47 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
+            align-items: center;
             margin: 0;
             padding: 0;
             background-color: #3f3f3f;
         }
+        
+        .links-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .links-container a {
+            margin: 0 10px;
+        }
+        
+        .iframe-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .iframe-container iframe {
+            border: none;
+            width: 50%;
+            height: 450px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <iframe frameborder="0" style="border:none;width:50%;height:100vh ;" width="50%" height="450" src="https://music.yandex.ru/iframe/playlist/mister.arturovich/3">Слушайте <a href='https://music.yandex.ru/users/mister.arturovich/playlists/3'>Мне нравится</a> — <a href='https://music.yandex.ru/users/mister.arturovich'>Ярослав</a> на Яндекс Музыке</iframe>
-    <iframe frameborder="0" style="border:none;width:50%;height:100vh;" width="100%" height="450" src="https://music.yandex.ru/iframe/playlist/mister.arturovich/1012">Слушайте <a href='https://music.yandex.ru/users/mister.arturovich/playlists/1012'>Слава России</a> — <a href='https://music.yandex.ru/users/mister.arturovich'>Ярослав</a> на Яндекс Музыке</iframe>
+    <div class="links-container">
+        <a href="https://music.yandex.ru/iframe/playlist/mister.arturovich/3">Линк</a>
+        <a href="https://music.yandex.ru/iframe/playlist/mister.arturovich/1012">Линк</a>
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="https://music.yandex.ru/iframe/playlist/mister.arturovich/3">Слушайте <a href='https://music.yandex.ru/users/mister.arturovich/playlists/3'>Мне нравится</a> — <a href='https://music.yandex.ru/users/mister.arturovich'>Ярослав</a> на Яндекс Музыке</iframe>
+        <iframe src="https://music.yandex.ru/iframe/playlist/mister.arturovich/1012">Слушайте <a href='https://music.yandex.ru/users/mister.arturovich/playlists/1012'>Слава России</a> — <a href='https://music.yandex.ru/users/mister.arturovich'>Ярослав</a> на Яндекс Музыке</iframe>
+    </div>
 </body>
 </html>
