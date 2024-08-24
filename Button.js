@@ -39,7 +39,7 @@ class MaterialButton extends HTMLElement {
                 }
 
                 .large {
-                    padding: 24px 48px;
+                    padding: 20px 40px;
                     font-size: 24px;
                 }
             </style>
