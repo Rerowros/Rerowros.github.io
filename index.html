@@ -4,37 +4,23 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>RAY</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-white dark:bg-gray-900 text-black dark:text-white">
 <div class="text-center">
-    <nav>
-        <a href="#" onclick="loadPage('home')">Главная</a>
-        <a href="#" onclick="loadPage('resume')">Резюме</a>
-    </nav>
+    <h1 class="text-4xl font-bold" style="margin-top: 30px">RAY</h1>
+    <div class="redirect-buttons">
+        <material-button href="home.html" size="small">Главная</material-button>
+        <material-button href="resume.html" size="medium">среднееее</material-button>
+        <material-button href="contact.html" size="large">биг боб</material-button>
+    </div>
 </div>
-
-<div class="text-center" id="content">
-    <section class="p-4 content-center" id="about">
-        <h2 class="text-2xl font-bold">Обо мне</h2>
-        <p>[Краткая информация о вас]</p>
-    </section>
-
-    <section class="p-4" id="skills">
-        <h2 class="text-2xl font-bold">Навыки</h2>
-        <ul class="list-disc pl-5">
-            <li>Навык 1</li>
-        </ul>
-    </section>
-
-    <section class="p-4 text-center" id="projects">
-        <h2 class="text-2xl font-bold text-center">Проекты</h2>
-        <div class="project mb-4">
-            <h3 class="text-xl font-semibold">Проект 1</h3>
-            <p>[Описание праоекта]</p>
-        </div>
-    </section>
-</div>
-<script src="script.js"></script>
+<script src="Button.js"></script>
 </body>
 </html>
