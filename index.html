@@ -5,35 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Your Project</title>
-</head>
-<body class="bg-white dark:bg-gray-900 text-black dark:text-white">
-<h1 class="text-3xl font-bold underline">Hello, World!</h1>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white"> <!-- Добавьте классы для тёмной темы -->
+<h1 class="text-3xl font-bold underline">Rerowros!</h1>
 <h2>ffрпрпf</h2>
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="showMessage()">Click me</button>
-<button id="theme-toggle" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Toggle Theme</button>
 
 <script>
     function showMessage() {
         alert('привет!');
     }
-
-    // Function to toggle theme
-    function toggleTheme() {
-        const body = document.body;
-        body.classList.toggle('dark');
-        localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
-    }
-
-    // Set theme on initial load
-    (function() {
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark');
-        }
-    })();
-
-    // Add event listener to the theme toggle button
-    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 </script>
 </body>
 </html>
