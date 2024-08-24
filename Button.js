@@ -55,6 +55,10 @@ class MaterialButton extends HTMLElement {
         if (this.hasAttribute('size')) {
             link.classList.add(this.getAttribute('size'));
         }
+        if (this.hasAttribute('new-window')) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        }
     }
 }
 
