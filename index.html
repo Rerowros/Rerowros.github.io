@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Project</title>
-<body class="bg-white dark:bg-gray-900 text-black dark:text-white"> <!-- Добавьте классы для тёмной темы -->
-<h1 class="text-3xl font-bold underline">Rerowros!</h1>
-<h2>Ярослав</h2>
-<h1>gjgj</h1>
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="showMessage()">Click me</button>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="styles.css" rel="stylesheet">
+    <title>RAY</title>
+</head>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white">
+<div class="text-center">
+    <nav>
+        <a href="#" onclick="loadPage('home')">Главная</a>
+        <a href="#" onclick="loadPage('resume')">Резюме</a>
+    </nav>
+</div>
 
-<script>
-    function showMessage() {
-        alert('привет!');
-    }
-</script>
+<div class="text-center" id="content">
+    <section class="p-4 content-center" id="about">
+        <h2 class="text-2xl font-bold">Обо мне</h2>
+        <p>[Краткая информация о вас]</p>
+    </section>
+
+    <section class="p-4" id="skills">
+        <h2 class="text-2xl font-bold">Навыки</h2>
+        <ul class="list-disc pl-5">
+            <li>Навык 1</li>
+        </ul>
+    </section>
+
+    <section class="p-4 text-center" id="projects">
+        <h2 class="text-2xl font-bold text-center">Проекты</h2>
+        <div class="project mb-4">
+            <h3 class="text-xl font-semibold">Проект 1</h3>
+            <p>[Описание праоекта]</p>
+        </div>
+    </section>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
