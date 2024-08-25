@@ -6,36 +6,61 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>RAY</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
 </head>
 <body class="text-black dark:text-white">
 <div class="text-center">
     <h1 class="text-4xl font-bold" style="margin-top: 30px">RAY</h1>
-    <div class="redirect-buttons bg-repeat">
+    <div class="redirect-buttons bg-repeat" style="margin-top: 20px; margin-bottom: 20px">
         <div class="flex flex-wrap justify-center space-x-0 sm:space-x-4">
-            <material-button class="flex-auto w-full sm:w-64 expand-on-hover" size="medium" href="resume.html" aria-label="Проекты" >Проекты</material-button>
-            <material-button class="flex-auto w-full sm:w-64 expand-on-hover" size="medium" href="contact.html" aria-label="Резюме" >Резюме</material-button>
-            <material-button class="flex-auto w-full sm:w-64 expand-on-hover disabled" size="large" href="index.html" aria-label="Главная">Главная</material-button>
-            <material-button class="flex-auto w-full sm:w-64 expand-on-hover" size="medium" href="contact.html" aria-label="Портфолио">Портфолио</material-button>
-            <material-button class="flex-auto w-full sm:w-64 expand-on-hover" size="medium" href="contact.html" aria-label="Блог" >Блог</material-button>
+            <material-button aria-label="Проекты" class="flex-auto w-full sm:w-64 expand-on-hover" href="resume.html"
+                             size="medium">Проекты
+            </material-button>
+            <material-button aria-label="Резюме" class="flex-auto w-full sm:w-64 expand-on-hover" href="contact.html"
+                             size="medium">Резюме
+            </material-button>
+            <material-button aria-label="Главная" class="flex-auto w-full sm:w-64 expand-on-hover disabled"
+                             href="index.html"
+                             size="large">Главная
+            </material-button>
+            <material-button aria-label="Портфолио" class="flex-auto w-full sm:w-64 expand-on-hover" href="portfolio.html"
+                             size="medium">Портфолио
+            </material-button>
+            <material-button aria-label="Блог" class="flex-auto w-full sm:w-64 expand-on-hover" href="contact.html"
+                             size="medium">Блог
+            </material-button>
         </div>
     </div>
 </div>
 
-<div class="flex justify-between p-4 text-center text-white rounded-lg shadow-lg myGray">
-    <div class="w-1/2 p-4">
+<div class="flex justify-between p-4 text-center text-white rounded-lg shadow-lg myGrayLighter">
+    <div class="w-1/2 p-4 stack-section">
         <h2 class="text-2xl font-bold mb-4">Контакты</h2>
-        <p><i class="fab fa-telegram-plane mr-2"></i>Телеграм: <a href="https://t.me/Rerowros" class="mygoldtext" target="_blank" rel="noopener noreferrer">Ярослав</a></p>
-        <p><i class="fas fa-envelope mr-2"></i>Почта: <a href="mailto:Rerowros@gmail.com" class="mygoldtext" target="_blank" rel="noopener noreferrer">Rerowros@gmail.com</a></p>
-        <p><i class="fab fa-github mr-2"></i><a class="mygoldtext" href="https://github.com/Rerowros" target="_blank" rel="noopener noreferrer">GITHUB</a></p>
+        <p><i class="fab fa-telegram-plane mr-2"></i>Телеграм: <a class="mygoldtext" href="https://t.me/Rerowros"
+                                                                  rel="noopener noreferrer" target="_blank">Ярослав</a>
+        </p>
+        <p><i class="fas fa-envelope mr-2"></i>Почта: <a class="mygoldtext" href="mailto:Rerowros@gmail.com"
+                                                         rel="noopener noreferrer"
+                                                         target="_blank">Rerowros@gmail.com</a></p>
+        <p><i class="fas fa-envelope mr-2"></i>Почта: <a class="mygoldtext" href="mailto:Rerowros@yandex.ru"
+                                                         rel="noopener noreferrer"
+                                                         target="_blank">Rerowros@yandex.ru</a></p>
+        <br>
+        <p><i class="fab fa-github mr-2"></i><a class="mygoldtext" href="https://github.com/Rerowros"
+                                                rel="noopener noreferrer"
+                                                target="_blank">GITHUB</a></p>
     </div>
-    <div class="w-1/2 p-4">
-        <h2 class="text-2xl font-bold mb-4">ПОТОМ</h2>
-        <p><i class="fab fa-github mr-2"></i><a class="mygoldtext" href="https://github.com/Rerowros" target="_blank" rel="noopener noreferrer">Rerowros</a></p>
+    <div class="w-1/2 p-4 stack-section">
+        <h2 class="text-2xl font-bold mb-4">СТЕК</h2>
+        <ul class="list-disc list-inside">
+            <li>JavaScript</li>
+            <li>Tailwind</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>C#</li>
+        </ul>
     </div>
 </div>
 

@@ -578,16 +578,16 @@ video {
   flex: 1 1 auto;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
 .list-disc {
   list-style-type: disc;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.content-center {
-  align-content: center;
 }
 
 .justify-center {
@@ -707,6 +707,10 @@ video {
     /* Устанавливаем ширину 100% для мобильных устройств */
     max-width: 90%;
   }
+
+  .stack-section {
+    width: 100% !important;
+  }
 }
 
 html, body {
@@ -715,13 +719,13 @@ html, body {
 }
 
 body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(270deg, #2d2d3d, #1c2332);
-  background-size: 600% 600%;
-  animation: gradient 15s ease infinite;
+  background: linear-gradient(270deg, #2f2b2b, #212121, #2d2d2d);
+  background-size: 700% 700%;
+  animation: gradient 35s ease infinite;
   color: #333;
 }
 
@@ -734,6 +738,10 @@ header {
 
 header h1 {
   margin: 0;
+}
+
+.myGrayLighter {
+  background-color: #424242;
 }
 
 .myGray {
@@ -782,9 +790,25 @@ ul.list-disc {
   list-style-position: inside;
   /* Перемещаем маркеры внутрь списка */
   text-align: center;
-  /* Центрируем текст */
-  padding: 5px;
+  /* Выравниваем текст по левому краю */
+  padding: 0;
   /* Убираем отступы */
+  color: #c48fe7;
+}
+
+.stack-section {
+  border: 1px solid #fbc565;
+  /* Gold border */
+  background-color: #2d2d2d;
+  /* Dark background */
+  padding: 1rem;
+  /* Padding for spacing */
+  margin: 1rem auto;
+  /* Margin for spacing */
+  border-radius: 8px;
+  /* Rounded corners */
+  width: 49%;
+  /* Optional: Set a width if needed */
 }
 
 .expand-on-hover {
@@ -824,3 +848,4 @@ ul.list-disc {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+
