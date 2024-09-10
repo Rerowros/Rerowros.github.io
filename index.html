@@ -38,6 +38,12 @@
         основной стек: <span style="color: #fbc565;">C#, JS, PHP</span>. Опыт разработки ботов (в т.ч под user)
         на <span style="color: #fbc565;">python</span></p>
 </div>
+<div id="resumeModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
 <div class="flex flex-wrap justify-center about-section ">
     <ul class="list-disc list-inside w-1/2" style="margin-bottom: 20px">
         <p class="font-bold">PYTHON</p>
@@ -77,7 +83,7 @@
         <p><i class="fab fa-github mr-2"></i><a class="mygoldtext" href="https://github.com/Rerowros"
                                                 rel="noopener noreferrer"
                                                 target="_blank">GITHUB</a></p>
-                    <material-button aria-label="Резюме" class="flex-auto w-full sm:w-64 expand-on-hover" href="contact.html"
+                    <material-button aria-label="Резюме" class="flex-auto w-full sm:w-64 expand-on-hover"
                                      size="medium">Резюме
                     </material-button>
     </div>
@@ -93,6 +99,36 @@
         </ul>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="Button.js"></script>
+<script>
+    $(document).ready(function() {
+        $('material-button[aria-label="Резюме"]').on('click', function() {
+            $.ajax({
+                url: 'Resume.html', // URL страницы, которую нужно подгрузить
+                method: 'GET',
+                success: function(data) {
+                    $('#modal-body').html(data); // Заменяем содержимое модального окна на подгруженную страницу
+                    $('#resumeModal').css('display', 'block'); // Показываем модальное окно
+                },
+                error: function() {
+                    alert('Ошибка при загрузке страницы');
+                }
+            });
+        });
+
+        // Закрытие модального окна при нажатии на крестик
+        $('.close').on('click', function() {
+            $('#resumeModal').css('display', 'none');
+        });
+
+        // Закрытие модального окна при нажатии вне его
+        $(window).on('click', function(event) {
+            if (event.target.id === 'resumeModal') {
+                $('#resumeModal').css('display', 'none');
+            }
+        });
+    });
+</script>
 </body>
 </html>
