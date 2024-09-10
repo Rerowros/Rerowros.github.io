@@ -604,12 +604,6 @@ video {
   margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-14 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(3.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -717,6 +711,13 @@ video {
   .stack-section {
     width: 100% !important;
   }
+
+  .stack-section ul {
+    word-break: break-word;
+    /* Перенос длинных слов */
+    overflow-wrap: break-word;
+    /* Перенос длинных слов */
+  }
 }
 
 html, body {
@@ -773,6 +774,16 @@ section {
   /* Устанавливаем автоматическую высоту */
   width: 50%;
   /* Устанавливаем ширину 50% */
+}
+
+.about-section
+{
+  border: 1px solid #c48fe7;
+  background-color: #2d2d2d;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  width: 99%;
 }
 
 section h2 {
