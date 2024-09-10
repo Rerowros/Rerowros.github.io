@@ -604,6 +604,12 @@ video {
   margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-14 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
