@@ -616,11 +616,6 @@ video {
   border-width: 1px;
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-repeat {
   background-repeat: repeat;
 }
@@ -860,9 +855,9 @@ ul.list-disc {
   background-color: rgba(0,0,0,0.4);
 }
 
-.modal-content {
+.modal-content-black {
   position: relative;
-  background-color: #fefefe;
+  background-color: #2a2a2a;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -881,7 +876,7 @@ ul.list-disc {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -899,11 +894,6 @@ ul.list-disc {
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark\:bg-gray-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-  }
-
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));

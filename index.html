@@ -38,12 +38,17 @@
         основной стек: <span style="color: #fbc565;">C#, JS, PHP</span>. Опыт разработки ботов (в т.ч под user)
         на <span style="color: #fbc565;">python</span></p>
 </div>
-<div id="resumeModal" class="modal">
-    <div class="modal-content">
+
+
+<div id="resumeModal" class="modal ">
+    <div class="modal-content-black ">
         <span class="close">&times;</span>
+        <button id="downloadPdf" class="expand-on-hover">Скачать PDF</button>
         <div id="modal-body"></div>
     </div>
 </div>
+
+
 <div class="flex flex-wrap justify-center about-section ">
     <ul class="list-disc list-inside w-1/2" style="margin-bottom: 20px">
         <p class="font-bold">PYTHON</p>
@@ -99,10 +104,13 @@
         </ul>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="Button.js"></script>
+
 <script>
     $(document).ready(function() {
+
         $('material-button[aria-label="Резюме"]').on('click', function() {
             $.ajax({
                 url: 'Resume.html', // URL страницы, которую нужно подгрузить
@@ -128,6 +136,13 @@
                 $('#resumeModal').css('display', 'none');
             }
         });
+    });
+</script>
+
+<script>
+    document.getElementById('downloadPdf').addEventListener('click', function() {
+        const element = document.getElementById('modal-body'); // Элемент, который нужно сохранить в PDF
+        html2pdf().from(element).save('resume.pdf');
     });
 </script>
 </body>
